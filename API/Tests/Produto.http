@@ -1,0 +1,13 @@
+###
+
+POST https://localhost:7019/api/produto
+Content-Type: application/json
+
+{
+    "product_name": "nome do produto",
+    "product_image": "a",
+    "product_desc": "desc",
+    "inventory": 90,
+    "status": true,
+    "price": 129.99
+}
