@@ -7,6 +7,14 @@ import { AppComponent } from './app.component';
 
 import { FormsModule } from '@angular/forms';
 
+import { HeaderComponent } from './product/header/header.component';
+import { NavComponent } from './product/nav/nav.component';
+import { ProductCreateComponent } from './product/product-create/product-create.component';
+import { ProductDeleteComponent } from './product/product-delete/product-delete.component';
+import { ProductDetailsComponent } from './product/product-details/product-details.component';
+import { ProductListComponent } from './product/product-list/product-list.component';
+import { ProductUpdateComponent } from './product/product-update/product-update.component';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -15,7 +23,14 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
   ],
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    NavComponent,
+    ProductCreateComponent,
+    ProductDeleteComponent,
+    ProductDetailsComponent,
+    ProductListComponent,
+    ProductUpdateComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
