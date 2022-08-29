@@ -1,6 +1,6 @@
 ###
 
-POST https://localhost:7019/api/produto
+POST https://localhost:7019/api/product
 Content-Type: application/json
 
 {
@@ -11,3 +11,25 @@ Content-Type: application/json
     "status": true,
     "price": 129.99
 }
+
+###
+
+GET https://localhost:7019/api/product
+
+###
+
+PUT https://localhost:7019/api/product/1736d9b8-aa18-4c37-a860-8cc74c6acbb0
+Content-Type: application/json
+
+{
+    "product_name": "nome do produto alterado",
+    "product_image": "a",
+    "product_desc": "desc",
+    "inventory": 90,
+    "status": true,
+    "price": 129.99
+}
+
+###
+
+DELETE https://localhost:7019/api/product/aa87843a-d7bb-443b-a8a7-30c9a686fd28
