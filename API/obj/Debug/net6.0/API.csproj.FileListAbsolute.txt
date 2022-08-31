@@ -33,7 +33,6 @@
 /home/rx495/Documentos/CRUD_jet/API/bin/Debug/net6.0/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
 /home/rx495/Documentos/CRUD_jet/API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
 /home/rx495/Documentos/CRUD_jet/API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
-/home/rx495/Documentos/CRUD_jet/API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll
 /home/rx495/Documentos/CRUD_jet/API/bin/Debug/net6.0/Microsoft.Extensions.Caching.Abstractions.dll
 /home/rx495/Documentos/CRUD_jet/API/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
 /home/rx495/Documentos/CRUD_jet/API/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
@@ -42,3 +41,4 @@
 /home/rx495/Documentos/CRUD_jet/API/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll
 /home/rx495/Documentos/CRUD_jet/API/bin/Debug/net6.0/Microsoft.Extensions.Options.dll
 /home/rx495/Documentos/CRUD_jet/API/bin/Debug/net6.0/Microsoft.Extensions.Primitives.dll
+/home/rx495/Documentos/CRUD_jet/API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll

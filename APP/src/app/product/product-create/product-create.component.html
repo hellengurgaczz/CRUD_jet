@@ -1,10 +1,15 @@
 <div class="form">
+
     <div class="container">
         <h3>Informações Principais</h3>
         <div class="product_info">
     
             <div class="product">
                 <form action="POST">
+
+                    <mat-slide-toggle checked color="primary" [(ngModel)]="product.status">Status</mat-slide-toggle>
+                    <br><br>
+
                     <label for="product_name">Nome do produto: </label>
                     <br>
                     <input type="text" name="product_name" [(ngModel)]="product.product_name" maxlength="150" placeholder="Digite o nome do produto">
