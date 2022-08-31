@@ -5,24 +5,24 @@
         <div class="product">
             <form action="POST">
 
-                <mat-slide-toggle checked="{{product.status}}" color="primary" [(ngModel)]="product.status">Status</mat-slide-toggle>
+                <mat-slide-toggle checked="{{product.status}}" color="primary" [(ngModel)]="product.status" [ngModelOptions]="{standalone: true}">Status</mat-slide-toggle>
                 <br><br>
 
-                <label for="product_name">Nome do produto: </label>
+                <label for="name">Nome do produto: </label>
                 <br>
-                <input type="text" name="product_name" [(ngModel)]="product.product_name" maxlength="150" placeholder="Digite o nome do produto">
+                <input type="text" name="name" [(ngModel)]="product.product_name" maxlength="150" placeholder="Digite o nome do produto"  [ngModelOptions]="{standalone: true}">
                 <br>
                 <label for="inventory">Estoque: </label>
                 <br>
-                <input type="number" name="inventory" [(ngModel)]="product.inventory">
+                <input type="number" name="inventory" [(ngModel)]="product.inventory" [ngModelOptions]="{standalone: true}">
                 <br>
                 <label for="price">Valor do produto: </label>
                 <br>
-                <input name="price" type="text" class="example-right-align" [(ngModel)]="product.price" >
+                <input name="price" type="text" class="example-right-align" [(ngModel)]="product.price"  [ngModelOptions]="{standalone: true}">
                 <br>
                 <label for="desc">Descrição: </label>
                 <br>
-                <textarea name="desc" [(ngModel)]="product.product_desc" maxlength="200"></textarea>
+                <textarea name="desc" [(ngModel)]="product.product_desc" maxlength="200" [ngModelOptions]="{standalone: true}"></textarea>
             </form>
             
         </div>

@@ -16,6 +16,7 @@ export class ProductCreateComponent implements OnInit {
 
   ngOnInit(): void {
 
+    this.product.status = true;
   }
 
   previewFile(event: Event) {

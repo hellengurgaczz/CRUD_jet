@@ -31,12 +31,15 @@ export class ProductUpdateComponent implements OnInit {
     let preview = document.querySelector('img');
     let reader = new FileReader();
     let target = event.target as HTMLInputElement;
-    let files = target.files as FileList;
-
-    reader.readAsDataURL(files[0]);
-    reader.onloadend = () => {
-     preview?.setAttribute('src', (reader.result)!.toString());
-     this.product.product_image = (reader.result)!.toString();
+    
+    if(target) {
+      let files = target.files as FileList;
+  
+      reader.readAsDataURL(files[0]);
+      reader.onloadend = () => {
+       preview?.setAttribute('src', (reader.result)!.toString());
+       this.product.product_image = (reader.result)!.toString();
+      }
     }
   }
 
