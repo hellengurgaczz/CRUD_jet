@@ -1,1 +1,29 @@
-<p>product-details works!</p>
+
+<div>
+    <div class="product">
+        <img />
+        
+        <div class="info">
+            <h2> {{product.product_name}} </h2>
+
+            <p> R$ {{product.price}} </p>
+            <span *ngIf="5 > product.inventory && product.inventory > 1" class="alert">Restam poucos em estoque!</span>
+            <span *ngIf="1 > product.inventory" class="lastsProducts" class="alert">Produto indisponível no momento!</span>
+
+            <p class="desc"> Detalhes </p>
+            <hr>
+            <p class="desc"> {{product.product_desc}} </p>
+            <br>
+
+            <span class="actions">
+                <button mat-raised-button class="btnEditProduct" routerLink="/product/update/{{product.id}}">Editar produto</button>
+                <button mat-raised-button class="btnDeleteProduct" routerLink="/product/delete/{{product.id}}">Excluir produto</button>
+            </span>
+
+        </div>
+
+        
+    </div>
+</div>
+    
+  

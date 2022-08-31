@@ -26,11 +26,16 @@ namespace API.Controllers
         [HttpGet]
         public List<Product> List() => _context.Products.ToList();
 
-        private Product GetById([FromRoute]Guid id) {
+        private Product findProductById([FromRoute]Guid id) {
 
             Product product = _context.Products.Find(id);
             return product;
         }
+
+        // GET: api/product/{id}
+        [HttpGet]
+        [Route("{id}")]
+        public Product getById([FromRoute]Guid id) => findProductById(id);
 
         // UPDATE: api/product/{id}
         [HttpPut]
@@ -48,7 +53,7 @@ namespace API.Controllers
         [Route("{id}")]
         public IActionResult Delete([FromRoute]Guid id) {
  
-            Product product = GetById(id);
+            Product product = findProductById(id);
 
             if(product == null) {
                 return NotFound();
@@ -56,7 +61,7 @@ namespace API.Controllers
 
             _context.Products.Remove(product);
             _context.SaveChanges();
-            return Ok("Produto deletado!");
+            return Ok();
         }
     }
 }

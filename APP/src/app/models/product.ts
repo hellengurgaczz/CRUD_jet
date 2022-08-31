@@ -1,9 +1,11 @@
+import { Guid } from 'guid-typescript';
+
 export class Product {
-    id?: number;
-    product_name?: string;
+    id?: Guid;
+    product_name: string = '';
     product_image: string = '';
-    product_desc: string = 'Sem descrição';
-    inventory?: number;
-    status: boolean = true;
-    price?: number;
+    product_desc: string = '';
+    inventory: number = 0;
+    status?: boolean = true;
+    price: number = 0;
 }

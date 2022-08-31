@@ -1,1 +1,19 @@
-<p>product-list works!</p>
+<div class="divProducts">
+    <div class="products">
+      <div class="product" *ngFor="let product of products" routerLink="details/{{product.id}}">
+
+          <img/>
+
+          <div class="info">
+            <p class="name"> {{product.product_name}} </p>
+            <br>
+            <p class="price"> R$ {{product.price}} </p>
+            <span *ngIf="!product.status || 1 > product.inventory" class="product-unavailable">Produto indisponível no momento</span>
+          </div>
+
+      </div>
+    </div>
+    <div class="actions">
+      <button mat-raised-button class="btnCreateProduct" routerLink="/product/create">Cadastrar novo produto</button>
+    </div>
+  </div>

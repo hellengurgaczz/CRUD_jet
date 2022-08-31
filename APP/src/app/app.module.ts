@@ -4,11 +4,12 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { FormsModule } from '@angular/forms';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 import { HeaderComponent } from './product/header/header.component';
-import { NavComponent } from './product/nav/nav.component';
 import { ProductCreateComponent } from './product/product-create/product-create.component';
 import { ProductDeleteComponent } from './product/product-delete/product-delete.component';
 import { ProductDetailsComponent } from './product/product-details/product-details.component';
@@ -21,11 +22,13 @@ import { ProductUpdateComponent } from './product/product-update/product-update.
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatSlideToggleModule
   ],
   declarations: [
     AppComponent,
     HeaderComponent,
-    NavComponent,
     ProductCreateComponent,
     ProductDeleteComponent,
     ProductDetailsComponent,

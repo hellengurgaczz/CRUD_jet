@@ -4,13 +4,17 @@ POST https://localhost:7019/api/product
 Content-Type: application/json
 
 {
-    "product_name": "nome do produto",
-    "product_image": "a",
-    "product_desc": "desc",
-    "inventory": 90,
+    "product_name": "Tenis Adidas",
+    "product_image": "",
+    "product_desc": "Tenis superstar adidas, mega confortavel, tenis original, para corrida, caminhadas e casual.",
+    "inventory": 10,
     "status": true,
     "price": 129.99
 }
+
+###
+
+GET https://localhost:7019/api/product/6ba6684a-6c55-4068-bc0c-119546b0bd2c
 
 ###
 

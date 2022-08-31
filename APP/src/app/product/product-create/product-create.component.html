@@ -1,0 +1,38 @@
+<div class="container">
+    <h3>Informações Principais</h3>
+    <div class="product_info">
+
+        <div class="product">
+            <form action="POST">
+                <label for="product_name">Nome do produto: </label>
+                <br>
+                <input type="text" name="product_name" [(ngModel)]="product.product_name" maxlength="150" placeholder="Digite o nome do produto">
+                <br>
+                <label for="inventory">Estoque: </label>
+                <br>
+                <input type="number" name="inventory" [(ngModel)]="product.inventory">
+                <br>
+                <label for="price">Valor do ingresso: </label>
+                <br>
+                <input name="price" type="text" class="example-right-align" [(ngModel)]="product.price" >
+                <br>
+                <label for="desc">Descrição: </label>
+                <br>
+                <textarea name="desc" [(ngModel)]="product.product_desc" maxlength="200"></textarea>
+            </form>
+            
+        </div>
+        <div class="images">
+            <label for="img">Selecione uma imagem (jpg, png, jpeg): </label>
+            <br>
+            <img width="100" alt="Previa da imagem" />
+            <br>
+            <input type="file" name="img" [(ngModel)]="product.product_image" (change)="previewFile($event)" accept="image/png, image/jpeg, image/jpg">
+        </div>
+    </div>
+
+    <div class="actions">
+        <button mat-raised-button class="btnSaveProduct" (click)="createProduct()">Cadastrar</button>
+        <button mat-raised-button  class="btnCancelProduct" routerLink="/">Cancelar</button>
+    </div>
+</div>

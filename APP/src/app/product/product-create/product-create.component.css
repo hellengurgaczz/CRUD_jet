@@ -1,0 +1,57 @@
+.container {
+    margin: 10px;
+    padding: 20px;
+    border: solid 4px gray;
+}
+
+.product_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.product_info > div {
+    flex: 1;
+    margin: 5px;
+}
+
+.product_info > .product {
+    border-right: solid 2px gray;
+}
+
+.acoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.actions > button {
+    margin: 10px;
+    width: 200px;
+}
+
+.btnSaveProduct {
+    background-color: #90EE90;
+    font-weight: bold;
+}
+
+.btnCancelProduct {
+    background-color: #FF6347;
+    font-weight: bold;
+}
+
+
+
+input, textarea {
+    margin: 5px 0px;
+    border: 2px solid #b3b3b3;
+    height: 20px;
+    width: 300px;
+}
+
+textarea {
+    height: 80px;
+}
+

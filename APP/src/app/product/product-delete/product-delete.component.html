@@ -1,1 +1,32 @@
-<p>product-delete works!</p>
+
+<div class="tittle">
+
+    <h3>Tem certeza que deseja deletar este produto?</h3>
+</div>
+<div>
+    <div class="product">
+        <img />
+        
+        <div class="info">
+            <h2> {{product.product_name}} </h2>
+
+            <p> R$ {{product.price}} </p>
+
+            <span class="alert"> Restam {{product.inventory}} em estoque </span>
+
+            <p class="desc"> Detalhes </p>
+            <hr>
+            <p class="desc"> {{product.product_desc}} </p>
+            <br>
+
+        </div>
+
+        
+    </div>
+    <div class="actions">
+        <button mat-raised-button class="btnDeleteProduct" (click)="deleteProduct()">Excluir produto</button>
+        <button mat-raised-button class="btnCancelProduct" routerLink="/product">Cancelar</button>
+    </div>
+</div>
+    
+  
