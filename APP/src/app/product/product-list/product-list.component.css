@@ -29,10 +29,13 @@
     color: #FF0000;
 }
 
-img {
+.image {
     flex: 75%;
-    width: 100%;
+    position: absolute;
+}
 
+img {
+    width: 100%;
 }
 
 .info {

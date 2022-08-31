@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { FormsModule } from '@angular/forms';
-import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 import { HeaderComponent } from './product/header/header.component';
 import { ProductCreateComponent } from './product/product-create/product-create.component';

@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/app/models/product';
 import { Guid } from 'guid-typescript';
 import { Router } from '@angular/router';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-product-list',
@@ -12,7 +13,7 @@ import { Router } from '@angular/router';
 export class ProductListComponent implements OnInit {
 
   products: Product[] = [];
-  constructor(private productService: ProductService, private router: Router) { }
+  constructor(private productService: ProductService, private router: Router, private _sanitizer: DomSanitizer) { }
 
   ngOnInit(): void {
     

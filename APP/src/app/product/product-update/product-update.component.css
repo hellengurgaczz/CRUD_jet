@@ -20,7 +20,7 @@
     border-right: solid 2px gray;
 }
 
-.acoes {
+.actions {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,8 +41,6 @@
     background-color: #FF6347;
     font-weight: bold;
 }
-
-
 
 input, textarea {
     margin: 5px 0px;

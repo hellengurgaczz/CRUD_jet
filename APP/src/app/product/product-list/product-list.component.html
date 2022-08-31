@@ -2,7 +2,9 @@
     <div class="products">
       <div class="product" *ngFor="let product of products" routerLink="details/{{product.id}}">
 
-          <img/>
+          <div class="image">
+            <img src="{{product.product_image}}">
+          </div>
 
           <div class="info">
             <p class="name"> {{product.product_name}} </p>

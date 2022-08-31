@@ -21,21 +21,20 @@ export class ProductCreateComponent implements OnInit {
   previewFile(event: Event) {
 
     let preview = document.querySelector('img');
-
     let reader = new FileReader();
     let target = event.target as HTMLInputElement;
     let files = target.files as FileList;
-
-    reader.readAsDataURL(files[0]);
-    reader.onloadend = () => {
-     preview?.setAttribute('src', (reader.result)!.toString());
+    if(files.length) {
+      reader.readAsDataURL(files[0]);
+      reader.onloadend = () => {
+       preview?.setAttribute('src', (reader.result)!.toString());
+       this.product.product_image = (reader.result)!.toString();
+      }
     }
   }
 
   createProduct() {
     
-    this.product.product_image = btoa(this.product.product_image)
-
     this.productService.create(this.product).subscribe(product => {
       console.log(product)
       this.router.navigate(["/product"]);
