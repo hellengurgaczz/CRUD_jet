@@ -46,7 +46,7 @@ export class ProductUpdateComponent implements OnInit {
   updateProduct() {
     
     if(this.product.id) {
-      this.productService.update(this.product, Guid.parse(this.product.id.toString())).subscribe(() => {
+      this.productService.update(this.product).subscribe(() => {
         this.router.navigate(["/product"]);
       })
     }

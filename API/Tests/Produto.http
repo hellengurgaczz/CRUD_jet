@@ -22,7 +22,7 @@ GET https://localhost:7019/api/product
 
 ###
 
-PUT https://localhost:7019/api/product/1736d9b8-aa18-4c37-a860-8cc74c6acbb0
+PUT https://localhost:7019/api/product
 Content-Type: application/json
 
 {

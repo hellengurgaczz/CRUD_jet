@@ -39,11 +39,21 @@ namespace API.Controllers
 
         // UPDATE: api/product/{id}
         [HttpPut]
-        [Route("{id}")]
-        public IActionResult Update([FromRoute]Guid _id, [FromBody] Product product) {
+        public IActionResult Update([FromRoute]Guid _id, [FromBody] Product newProduct) {
            
-            product.id = _id;
-            _context.Products.Update(product);
+            Product product = findProductById(newProduct.id);
+
+            if(product == null) {
+                return NotFound();
+            }
+
+            product.product_name = newProduct.product_name;
+            product.product_image = newProduct.product_image;
+            product.product_desc = newProduct.product_desc;
+            product.status = newProduct.status;
+            product.inventory = newProduct.inventory;
+            product.price = newProduct.price;
+
             _context.SaveChanges();
             return Ok();
         }
