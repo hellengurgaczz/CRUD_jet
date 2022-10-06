@@ -1,4 +1,4 @@
-# CRUD_jet
+# Shoes Store
 
 # Iniciar APP
 Rode `ng serve` para iniciar a aplicação angular que estará alocada em `http://localhost:4200/`.
